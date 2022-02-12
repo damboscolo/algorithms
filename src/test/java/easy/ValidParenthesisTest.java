@@ -21,7 +21,7 @@ class ValidParenthesisTest {
         assertFalse(v.mySolution("(("));
         assertFalse(v.mySolution("]"));
         assertFalse(v.mySolution("(){}}{"));
-        assertFalse(v.incredibleSolution("<()>"));
+        assertFalse(v.mySolution("<()>"));
     }
 
     @Test

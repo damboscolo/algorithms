@@ -5,6 +5,8 @@ package easy;
 
 https://leetcode.com/problems/valid-parentheses/
 
+O(n)
+
 */
 
 import java.util.*;
