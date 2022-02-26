@@ -7,6 +7,7 @@ Purpose of studying algorithms and Java.
 - [two sum](https://leetcode.com/problems/two-sum/)
 - [valid parenthesis](https://leetcode.com/problems/valid-parentheses/)
 - [merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [climbing stairs](https://leetcode.com/problems/climbing-stairs/)
 
 ## Mine
 - round currency - used on Rappi Turbo
