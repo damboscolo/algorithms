@@ -8,9 +8,10 @@ Purpose of studying algorithms and Java.
 - [valid parenthesis](https://leetcode.com/problems/valid-parentheses/)
 - [merge two sorted lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 - [climbing stairs](https://leetcode.com/problems/climbing-stairs/)
+- [fibonacci](https://leetcode.com/problems/fibonacci-number/)
 
 ## Mine
-- round currency - used on Rappi Turbo
+- round currency - used in mine work project
 
 ##  Sources
 LeetCode [Top 100 liked question](https://leetcode.com/problemset/all/?difficulty=EASY&page=1&listId=79h8rn6)
