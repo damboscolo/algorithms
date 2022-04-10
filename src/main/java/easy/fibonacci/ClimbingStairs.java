@@ -1,4 +1,4 @@
-package easy;
+package easy.fibonacci;
 
 /*
 70. Climbing Stairs
