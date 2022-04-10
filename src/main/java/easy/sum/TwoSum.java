@@ -1,4 +1,4 @@
-package easy;
+package easy.sum;
 
 /*
 1. Two Sum
@@ -9,6 +9,8 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 */
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 

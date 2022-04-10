@@ -1,5 +1,6 @@
-package easy;
+package easy.sum;
 
+import easy.sum.TwoSum;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
