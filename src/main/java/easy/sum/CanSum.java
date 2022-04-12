@@ -37,10 +37,10 @@ public class CanSum {
     }
 
     /*
-     O(nˆm) time O(m) space
-
      n = numbers array length
      m = targetSum
+
+     O(nˆm) time O(m) space
      */
     public boolean recursive(int[] numbers, int targetSum) {
         if (targetSum == 0) return true;
