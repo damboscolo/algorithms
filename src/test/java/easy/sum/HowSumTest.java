@@ -23,7 +23,7 @@ class HowSumTest {
     }
 
     @Test
-    @DisplayName("recursive - Given a list of int and a target Then return a list of index that sum the target")
+    @DisplayName("memoized - Given a list of int and a target Then return a list of index that sum the target")
     public void test2() {
         assertArrayEquals(new int[] {7, 2}, t.memoized(new int[] {2,7,11,15}, 9));
         assertArrayEquals(new int[] {1, 2, 2, 2, 2}, t.memoized(new int[] {2,4,3,1}, 9));
