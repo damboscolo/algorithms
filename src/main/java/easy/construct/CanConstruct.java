@@ -1,4 +1,4 @@
-package easy;
+package easy.construct;
 
 import java.util.HashMap;
 
