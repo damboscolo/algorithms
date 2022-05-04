@@ -12,6 +12,7 @@ Fibonacci sequence:
 Given n, calculate F(n) -> it means, given n, calculate the number on the index n
  */
 
+import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -64,6 +65,18 @@ public class Fibonacci {
         if (n <= 2) return 1L;
         memo.put(n, fibDynamicProgrammingStudy(n - 1, memo) + fibDynamicProgrammingStudy(n - 2, memo));
         return memo.get(n);
+    }
+
+    public BigInteger fibBigInteger(int n) {
+        return fibBigInteger(n, new HashMap());
+    }
+    public BigInteger fibBigInteger(int n, Map<Integer, BigInteger> memo) {
+        if (memo.containsKey(n)) return memo.get(n);
+        if (n == 0) return BigInteger.valueOf(0);
+        if (n <= 2) return BigInteger.valueOf(1);
+        BigInteger result = fibBigInteger(n-1, memo).add(fibBigInteger(n-2, memo));
+        memo.put(n, result);
+        return result;
     }
 
     // time O(n) space O(n)

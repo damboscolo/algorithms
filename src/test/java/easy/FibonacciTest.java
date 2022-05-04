@@ -4,6 +4,8 @@ import easy.fibonacci.Fibonacci;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigInteger;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FibonacciTest {
@@ -73,9 +75,33 @@ class FibonacciTest {
         assertEquals(34, f.fibDynamicProgrammingStudy(9));
         assertEquals(55, f.fibDynamicProgrammingStudy(10));
         assertEquals(6765, f.fibDynamicProgrammingStudy(20));
+        // here we can calculate much more values because of the memo
         assertEquals(2971215073L, f.fibDynamicProgrammingStudy(47));
         assertEquals(12586269025L, f.fibDynamicProgrammingStudy(50));
+
+        // PS: Long/long can't handle the number 31940434634990099905 because it is too large. Need to use BigInteger
+//        assertEquals(31940434634990099905L, f.fibDynamicProgrammingStudy(95));
+    }
+    @Test
+    @DisplayName("Given a number then return the fibonacci sum")
+    public void tesFibBigInteger() {
+        assertEquals(BigInteger.valueOf(0), f.fibBigInteger(0));
+        assertEquals(BigInteger.valueOf(1), f.fibBigInteger(1));
+        assertEquals(BigInteger.valueOf(1), f.fibBigInteger(2));
+        assertEquals(BigInteger.valueOf(2), f.fibBigInteger(3));
+        assertEquals(BigInteger.valueOf(3), f.fibBigInteger(4));
+        assertEquals(BigInteger.valueOf(8), f.fibBigInteger(6));
+        assertEquals(BigInteger.valueOf(13), f.fibBigInteger(7));
+        assertEquals(BigInteger.valueOf(21), f.fibBigInteger(8));
+        assertEquals(BigInteger.valueOf(34), f.fibBigInteger(9));
+        assertEquals(BigInteger.valueOf(55), f.fibBigInteger(10));
+        assertEquals(BigInteger.valueOf(6765), f.fibBigInteger(20));
         // here we can calculate much more values because of the memo
+        assertEquals(BigInteger.valueOf(2971215073L), f.fibBigInteger(47));
+        assertEquals(new BigInteger("12586269025"), f.fibBigInteger(50));
+
+        // BigInteger can handle the number 31940434634990099905!
+        assertEquals(new BigInteger("31940434634990099905"), f.fibBigInteger(95));
     }
 
     @Test
