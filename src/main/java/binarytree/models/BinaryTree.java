@@ -1,10 +1,10 @@
-package binarytree;
+package binarytree.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTree {
-    TreeNode root;
+    public TreeNode root;
 
     public BinaryTree(List<Integer> list) {
         this.root = buildTree(list, 0);

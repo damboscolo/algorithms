@@ -1,4 +1,4 @@
-package binarytree;
+package binarytree.models;
 
 import org.junit.jupiter.api.Test;
 
