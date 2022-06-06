@@ -103,7 +103,7 @@ class FibonacciTest {
         assertEquals(34, f.tabledLong(9));
         assertEquals(55, f.tabledLong(10));
         assertEquals(6765, f.tabledLong(20));
-//        // here we can calculate much more values because of the memo
+        // here we can calculate much more values because of the memo
         assertEquals(2971215073L, f.tabledLong(47));
         assertEquals(12586269025L, f.tabledLong(50));
 
